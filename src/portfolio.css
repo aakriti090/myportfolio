@@ -1,0 +1,157 @@
+body {
+  background: #0f0f2d;
+  color: #f0f0f0;
+  justify-content: center;
+}
+
+.header {
+  background: rgba(19, 19, 46, 0.2); 
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.5); /* Purple glow */
+  border-bottom: 1px solid rgba(192, 132, 252, 0.3); /* Optional: glowing border */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a682ff;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #a682ff;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #c084fc;
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 200px;
+  border-radius: 30%;
+  margin: 20px auto;
+  box-shadow: 0 0 20px #c084fc80;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #c084fc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 45px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #1c1c3a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #c084fc40;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-15px);
+}
+
+footer {
+  background: #1a1a39;
+  text-align: center;
+  padding: 5px;
+  margin-top: 40px;
+  
+}
+
+footer .socials a {
+  margin: 0 10px;
+  color: #f0f0f0;
+}
+
+footer .socials a:hover {
+  color: #c084fc;
+}
+
+.about-hero {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden; /* Important for glow containment */
+}
+
+.glow-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at center, #bf8cf3 0%, #6b6be9 70%);
+  filter: blur(120px);
+  opacity: 0.4;
+  z-index: -3;
+  pointer-events: none;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.education {
+  margin-top: 15px;
+  font-size: 1.05rem;
+  color: #a682ff;
+  font-weight: 500;
+}
+
+.college-link {
+  color: #a682ff;
+  transition: color 0.3s ease;
+}
+
+.college-link:hover {
+  color: white;
+}
+
